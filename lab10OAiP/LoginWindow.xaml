@@ -1,0 +1,53 @@
+﻿<Window x:Class="lab10OAiP.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab10OAiP"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="450" Width="800">
+    <StackPanel>
+        <TextBlock Text="Вход в систему" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Center" 
+                   Margin="0,0,0,20"/>
+
+                <TextBlock Text="Email" 
+                   FontWeight="Bold" 
+                   Margin="0,10,0,5"/>
+                <TextBox x:Name="txtEmail" 
+                 FontSize="14" 
+                 Padding="5"/>
+
+                <TextBlock Text="Пароль" 
+                   FontWeight="Bold" 
+                   Margin="0,15,0,5"/>
+                <PasswordBox x:Name="txtPassword" 
+                     FontSize="14" 
+                     Padding="5"/>
+
+                <Button x:Name="btnLogin" 
+                Content="ВОЙТИ" 
+                Click="BtnLogin_Click"
+                Height="40" 
+                Margin="0,25,0,10"
+                Background="#E36887" 
+                Foreground="White" 
+                FontWeight="Bold" 
+                FontSize="14"/>
+
+                <Button x:Name="btnRegister" 
+                Content="Нет аккаунта? Зарегистрироваться" 
+                Click="BtnRegister_Click"
+                Background="Transparent" 
+                Foreground="Gray"
+                Margin="0,5"/>
+        <Button x:Name="btnForgot" 
+        Content="Забыли пароль?" 
+        Click="BtnForgot_Click"
+        Background="Transparent" 
+        Foreground="Gray"
+        Margin="0,5"/>
+            </StackPanel>
+        </Window>
